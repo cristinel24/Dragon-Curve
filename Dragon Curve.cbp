@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Dragon Curve" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Dragon Curve" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="sdk/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -mwindows" />
+					<Add library="C:/OJI/Codeblocks/MinGW/lib/libgdi32.a" />
+					<Add directory="sdk/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Dragon Curve" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="D:/Scoala/Informatica/Dragon Curve/sdk/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32" />
+			<Add option="-lSDLmain" />
+			<Add option="-lSDL" />
+			<Add option="-lSDL_image" />
+			<Add option="-lSDL_mixer" />
+			<Add option="-lSDL_ttf" />
+			<Add library="sdk/lib/libSDL2main.a" />
+			<Add library="sdk/lib/libSDL2.a" />
+			<Add library="sdk/lib/libSDL2_test.a" />
+			<Add library="sdk/lib/libSDL2.dll.a" />
+			<Add directory="D:/Scoala/Informatica/Dragon Curve/sdk/lib" />
+		</Linker>
+		<Unit filename="graphics2.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="winbgi2.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
